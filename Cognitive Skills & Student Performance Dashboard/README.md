@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# 🧠 Cognitive Skills & Student Performance Dashboard
 
-## Project info
+This project analyzes synthetic student data to explore the relationship between **cognitive skills** (comprehension, attention, focus, retention, engagement time) and **student performance**.  
+It combines **data science (Python)** for insights and **Next.js dashboard** for interactive visualization.
 
-**URL**: https://lovable.dev/projects/9cc5ffc7-be8d-4fb9-a467-f39efc4bef7b
+---
 
-## How can I edit this code?
+## 🚀 Features
+- Synthetic student dataset (student_id, name, class, comprehension, attention, focus, retention, engagement_time, assessment_score).
+- **Analysis (Jupyter Notebook)**:
+  - Correlation between cognitive skills and performance.
+  - Machine learning model to predict assessment scores.
+  - Clustering students into learning personas.
+- **Dashboard (Next.js)**:
+  - Overview stats (average scores & skills).
+  - Charts: bar (skill vs score), scatter (attention vs performance), radar (student profile).
+  - Searchable & sortable student table.
+  - Insights section with key findings.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ⚙️ Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9cc5ffc7-be8d-4fb9-a467-f39efc4bef7b) and start prompting.
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/student-performance-dashboard.git
+cd student-performance-dashboard
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Run Jupyter Notebook (Analysis + ML)
+cd notebook
+jupyter notebook analysis.ipynb
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Run Next.js Dashboard
+cd dashboard
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Deployment on Vercel
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Push repo to GitHub.
 
-**Use GitHub Codespaces**
+Go to Vercel
+ → Import GitHub repo.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Framework: Next.js
 
-## What technologies are used for this project?
+Build Command: next build
 
-This project is built with:
+Output Directory: .next
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Deploy → Get your public link 🎉
 
-## How can I deploy this project?
+📊 Example Insights
 
-Simply open [Lovable](https://lovable.dev/projects/9cc5ffc7-be8d-4fb9-a467-f39efc4bef7b) and click on Share -> Publish.
+Comprehension has the strongest positive correlation with assessment scores.
 
-## Can I connect a custom domain to my Lovable project?
+Engagement time boosts performance, but after a point, returns diminish.
 
-Yes, you can!
+Students fall into 3 main learning personas:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎯 Focused High Performers
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📘 Average Attentive Learners
+
+⏳ Low Engagement / Struggling
+
+🛠️ Tech Stack
+
+Python (pandas, scikit-learn, matplotlib, seaborn) → Analysis & ML
+
+Next.js + React + TailwindCSS → Dashboard UI
+
+Recharts / Chart.js → Visualizations
+
+Vercel → Deployment
